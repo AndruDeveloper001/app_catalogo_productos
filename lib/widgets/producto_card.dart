@@ -20,12 +20,7 @@ class ProductoCard extends StatelessWidget {
         child: Row(
           children: [
             ClipRRect(
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(4),
-                topRight: Radius.circular(4),
-                bottomLeft: Radius.circular(4),
-                bottomRight: Radius.circular(4),
-              ),
+              borderRadius: BorderRadius.circular(4),
               child: Image.asset(
                 producto.imagenUrl,
                 width: 100,
@@ -33,7 +28,7 @@ class ProductoCard extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: 30),
             Expanded(
               child: ListTile(
                 contentPadding: EdgeInsets.zero,
